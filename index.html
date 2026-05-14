@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경극 구성요소 찾기</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; background: #f7f7f5; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+  .container { max-width: 720px; width: 100%; }
+  h1 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.4rem; }
+  .subtitle { font-size: 14px; color: #888; margin-bottom: 2rem; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .card { background: #fff; border: 0.5px solid #e0e0d8; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; gap: 12px; }
+  .card-header { display: flex; align-items: center; justify-content: space-between; }
+  .scene-label { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+  .badge { font-size: 12px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+  .b1 { background: #E1F5EE; color: #0F6E56; }
+  .b2 { background: #E6F1FB; color: #185FA5; }
+  .b3 { background: #FAEEDA; color: #854F0B; }
+  .b4 { background: #FAECE7; color: #993C1D; }
+  .btn { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; padding: 8px 16px; border-radius: 8px; border: 0.5px solid #d0d0c8; background: #f7f7f5; color: #1a1a1a; text-decoration: none; transition: background 0.15s; }
+  .btn:hover { background: #eeeeea; }
+  .btn svg { flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>경극 구성요소 찾기</h1>
+  <p class="subtitle">아래 장면 버튼을 눌러 영상을 감상한 후, 활동지에서 창·염·주·타 중 어느 요소인지 동그라미 표시해 보세요.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header">
+        <span class="scene-label">장면 1</span>
+        <span class="badge b1">1:44:07 ~ 1:44:40</span>
+      </div>
+      <a class="btn" href="https://www.youtube.com/watch?v=WrXfW6cnil4&t=6247s" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 보기
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <span class="scene-label">장면 2</span>
+        <span class="badge b2">1:45:00 ~ 1:46:00</span>
+      </div>
+      <a class="btn" href="https://www.youtube.com/watch?v=WrXfW6cnil4&t=6300s" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 보기
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <span class="scene-label">장면 3</span>
+        <span class="badge b3">1:46:00 ~ 1:46:50</span>
+      </div>
+      <a class="btn" href="https://www.youtube.com/watch?v=WrXfW6cnil4&t=6360s" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 보기
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <span class="scene-label">장면 4</span>
+        <span class="badge b4">1:00:45 ~ 1:01:25</span>
+      </div>
+      <a class="btn" href="https://www.youtube.com/watch?v=WrXfW6cnil4&t=3645s" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 보기
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
